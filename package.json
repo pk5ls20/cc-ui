@@ -1,0 +1,21 @@
+{
+  "name": "cc-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C play dev",
+    "doc:dev": "pnpm -C docs dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/test-utils": "^2.4.6",
+    "typescript": "^5.5.4",
+    "vue": "^3.4.38"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.5"
+  }
+}
