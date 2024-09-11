@@ -1,25 +1,32 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "c-ui组件库"
-  text: "基于Vue3的组件库"
-  tagline: 
+  name: "c-ui"
+  text: "a Vue3 components library"
+  tagline:
+  image:
+    src: /logo.png
+    alt: c-ui
   actions:
     - theme: brand
-      text: 快速开始
+      text: get started
       link: /markdown-examples
     - theme: alt
       text: Github
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon:
+      src: /vue.png
+    title: Vue 3 Powered
+    details: Leverage Vue 3’s reactive and efficient components for a seamless development experience.
+  - icon:
+      src: /typescript.png
+    title: TypeScript Support
+    details: Enjoy type safety and enhanced tooling with built-in TypeScript integration.
+  - icon:
+      src: /develop.png
+    title: Fast & Developer-Friendly
+    details: Blazing fast performance with optimized builds, plus Husky ensures your code is always clean and linted before every commit.
 ---
-
