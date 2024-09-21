@@ -21,11 +21,42 @@ export default tseslint.config({
   },
   rules: {
     // semi: ["warn", "never"],
+    // vue
+    "vue/no-v-html": "off",
+    "vue/require-default-prop": "off",
+    "vue/require-explicit-emits": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/prefer-import-from-vue": "off",
+    "vue/no-v-text-v-html-on-component": "off",
+    "vue/html-self-closing": [
+      "error",
+      {
+        html: {
+          void: "always",
+          normal: "always",
+          component: "always"
+        },
+        svg: "always",
+        math: "always"
+      }
+    ],
+
     "comma-dangle": ["error", "never"],
     "no-unused-vars": 2,
     "space-before-function-paren": 0,
     "generator-star-spacing": "off",
     "object-curly-spacing": 0, // 强制在大括号中使用一致的空格
-    "array-bracket-spacing": 0 // 方括号
-  }
+    "array-bracket-spacing": 0, // 方括号
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  ignores: [
+    "node_modules/",
+    "**/*.test.ts",
+    "dist/",
+    "build/",
+    "**.md",
+    "**/package.json",
+    "coverage",
+    "play"
+  ]
 });

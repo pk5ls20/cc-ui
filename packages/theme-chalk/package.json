@@ -1,8 +1,8 @@
 {
-  "name": "@cui/theme-chalk",
+  "name": "@c-ui/theme-chalk",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

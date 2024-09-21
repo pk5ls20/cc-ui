@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest';
 
 import { mount } from '@vue/test-utils'
-import Button from '../button/src/button.vue';
+import Button from '../src/button.vue'
+import type { ButtonType, ButtonSizeType } from '../src/interface';
 
 describe('Button.vue', ()=>{
     it('create', ()=> {
@@ -12,5 +13,4 @@ describe('Button.vue', ()=>{
         expect(wrapper.classes()).toContain('c-button--large')
     })
 }
-
 )

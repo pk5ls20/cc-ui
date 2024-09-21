@@ -1,21 +1,23 @@
-import { ExtractPropTypes, PropType } from "vue"
-import type { ButtonNativeType, ButtonSizeType, ButtonType } from './interface';
+import { ExtractPropTypes, PropType } from "vue";
+import type { ButtonNativeType, ButtonSizeType, ButtonType } from "./interface";
 
 export const Props = {
   type: {
     type: String as PropType<ButtonType>,
-    default: 'default',
+    default: "default",
     validator(value: ButtonType) {
-      return (['default', 'primary', 'success', 'info', 'danger', 'warning'] as const).includes(
-        value
-      );
+      return (
+        ["default", "primary", "success", "info", "danger", "warning"] as const
+      ).includes(value);
     }
   },
   size: {
     type: String as PropType<ButtonSizeType>,
-    default: 'default',
+    default: "default",
     validator(value: ButtonSizeType) {
-      return (['default', 'medium', 'small', 'mini', 'tiny'] as const).includes(value);
+      return (
+        ["default", "medium", "small", "mini", "large"] as const
+      ).includes(value);
     }
   },
   plain: {
@@ -36,7 +38,7 @@ export const Props = {
   },
   icon: {
     type: String,
-    default: ''
+    default: ""
   },
   autoFocus: {
     type: Boolean,
@@ -44,9 +46,9 @@ export const Props = {
   },
   nativeType: {
     type: String as PropType<ButtonNativeType>,
-    default: 'button',
+    default: "button",
     validator(value: ButtonNativeType) {
-      return (['button', 'submit', 'reset'] as const).includes(value);
+      return (["button", "submit", "reset"] as const).includes(value);
     }
   }
 };

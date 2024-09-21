@@ -1,0 +1,19 @@
+{
+  "name": "c-ui",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build-umd": "vite build --config vite.umd.config.ts"
+  },
+  "dependencies": {
+    "@c-ui/components": "workspace:^1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite-plugin-dts": "^3.9.1"
+  }
+}

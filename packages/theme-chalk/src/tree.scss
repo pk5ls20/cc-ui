@@ -1,0 +1,92 @@
+/* CTree 组件的样式 */
+.c-tree {
+  list-style: none; /* 移除默认的列表样式 */
+  padding-left: 0; /* 移除默认的左侧填充 */
+  margin: 0; /* 移除默认的外边距 */
+  font-family: Arial, sans-serif; /* 设置字体 */
+
+  /* 树节点的样式 */
+  &__node {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 8px 12px; /* 内边距 */
+    margin: 2px 0; /* 上下外边距 */
+    border-radius: 4px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 过渡效果 */
+
+    /* 鼠标悬停时的背景颜色 */
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* 节点展开状态 */
+    &--expanded {
+      background-color: #f9a8d4; /* 展开时的背景颜色，可以根据需要调整 */
+      color: #ffffff; /* 展开时的文本颜色 */
+    }
+
+    /* 节点收缩状态 */
+    &--collapsed {
+      background-color: #ffffff; /* 收缩时的背景颜色 */
+      color: #333333; /* 收缩时的文本颜色 */
+    }
+
+    /* 节点标签的样式 */
+    &__label {
+      display: flex;
+      align-items: center;
+      flex: 1; /* 标签占据剩余空间 */
+    }
+
+    /* 复选框的样式 */
+    &__checkbox {
+      margin-right: 8px;
+    }
+
+    /* 展开/收缩图标的样式 */
+    &__icon {
+      margin-right: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+
+      /* 展开状态的图标 */
+      &--expanded:before {
+        content: "▼"; /* 展开时显示向下箭头 */
+        display: inline-block;
+        transform: rotate(0deg);
+      }
+
+      /* 收缩状态的图标 */
+      &--collapsed:before {
+        content: "▶"; /* 收缩时显示向右箭头 */
+        display: inline-block;
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  /* 子节点的样式 */
+  &__children {
+    padding-left: 20px; /* 子节点缩进 */
+    list-style: none; /* 移除默认的列表样式 */
+    margin: 0;
+  }
+
+  /* 选中节点的样式 */
+  &__node--checked {
+    background-color: #e0f7fa; /* 选中时的背景颜色 */
+    color: #00796b; /* 选中时的文本颜色 */
+
+    &:hover {
+      background-color: #b2ebf2; /* 选中并悬停时的背景颜色 */
+    }
+  }
+
+  /* 禁用节点的样式 */
+  &__node--disabled {
+    opacity: 0.6; /* 半透明 */
+    cursor: not-allowed; /* 不允许操作的鼠标指针 */
+    pointer-events: none; /* 禁止所有鼠标事件 */
+  }
+}

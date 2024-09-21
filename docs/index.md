@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: get started
-      link: /markdown-examples
+      link: /guide/install
     - theme: alt
       text: Github
-      link: /api-examples
+      link: "https://github.com/Goodeve0/cc-ui"
 
 features:
   - icon:
