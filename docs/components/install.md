@@ -6,12 +6,12 @@
 
 ### 版本
 
-Tass UI 目前还处于快速开发迭代中。
+C UI 目前还处于快速开发迭代中。
 
 ### NPM 安装
 
 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
 
 ```
-npm i tass-ui -S
+npm i c-ui -S
 ```

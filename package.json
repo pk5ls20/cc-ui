@@ -1,12 +1,17 @@
 {
   "name": "c-ui-monorepo",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "pnpm --filter @c-ui/play dev",
-    "doc:dev": "pnpm -C docs dev",
+    "build": "vite build",
+    "build:components": "pnpm --filter components build",
+    "build:theme": "pnpm run -C packages/theme-chalk build",
+    "preview": "vite preview",
+    "docs:dev": "pnpm -C docs dev",
+    "docs:build": "pnpm --filter @c-ui/docs build",
     "prepare": "husky || true",
     "lint": "eslint 'src/**/*.{js,ts,vue}'",
     "test": "pnpm --filter @c-ui/components test"
@@ -34,6 +39,7 @@
     "eslint-plugin-vue": "^9.28.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.10",
+    "rollup-plugin-visualizer": "^5.12.0",
     "sass": "^1.55.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.5.0",

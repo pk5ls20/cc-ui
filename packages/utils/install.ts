@@ -1,6 +1,6 @@
 import type { App, Plugin, Directive } from "vue";
 import { noop } from "lodash-es";
-import { each } from "lodash";
+import each from "lodash/each";
 
 type SFCWithInstall<T> = T & Plugin;
 

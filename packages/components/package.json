@@ -4,7 +4,8 @@
   "description": "all components are settled here",
   "main": "index.js",
   "scripts": {
-    "test": "vitest --coverage"
+    "test": "vitest --coverage",
+    "build":"vite build"
   },
   "keywords": [],
   "author": "",
